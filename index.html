@@ -1,279 +1,270 @@
-```html
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Zivani Cinta Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<body class="is-preload">
+    <title>Zivani Cinta Portfolio</title>
 
-		<div id="wrapper" class="fade-in">
+    <style>
 
-				<div id="intro">
-						<h1>Zivani<br />
-						Cinta</h1>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
 
-						<p>
-						Mahasiswa Telkom University yang memiliki minat dalam bidang jaringan komputer,
-						Internet of Things (IoT), networking, pengembangan teknologi digital,
-						dan content creation.
-						</p>
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
 
-						<ul class="actions">
-							<li>
-								<a href="#header" class="button icon solid solo fa-arrow-down scrolly">
-									Continue
-								</a>
-							</li>
-						</ul>
-				</div>
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+            padding:40px 0;
+        }
 
-				<header id="header">
-						<a href="index.html" class="logo">Zivani Cinta</a>
-				</header>
+        .hero{
+            background:white;
+            border-radius:20px;
+            padding:40px;
+            text-align:center;
+            box-shadow:0 4px 15px rgba(0,0,0,0.1);
+        }
 
-				<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Portfolio</a></li>
-							<li><a href="generic.html">About Me</a></li>
-							<li><a href="elements.html">Skills</a></li>
-						</ul>
+        .hero img{
+            width:160px;
+            height:160px;
+            border-radius:50%;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
 
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-				</nav>
+        .hero h1{
+            font-size:42px;
+            margin-bottom:10px;
+        }
 
-				<div id="main">
+        .hero p{
+            font-size:18px;
+            color:#666;
+            line-height:1.6;
+        }
 
-						<article class="post featured">
+        .section{
+            background:white;
+            margin-top:30px;
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.1);
+        }
 
-								<header class="major">
+        .section h2{
+            margin-bottom:20px;
+            color:#111;
+            font-size:28px;
+        }
 
-									<span class="date">Telkom University Student</span>
+        .card{
+            margin-bottom:20px;
+        }
 
-									<h2>
-										<a href="#">
-											Welcome To<br />
-											My Portfolio
-										</a>
-									</h2>
+        .card h3{
+            margin-bottom:10px;
+            color:#222;
+        }
 
-									<p>
-									Saya merupakan mahasiswa Telkom University dengan fokus pada
-									pengembangan kemampuan di bidang jaringan telekomunikasi,
-									IoT, networking, Python programming, dan teknologi digital.
-									Selain aktif dalam akademik, saya juga aktif dalam organisasi
-									serta pengembangan project teknologi.
-									</p>
+        .card p{
+            line-height:1.7;
+            color:#555;
+        }
 
-								</header>
+        ul{
+            padding-left:20px;
+        }
 
-								<a href="#" class="image main">
-									<img src="images/pic01.jpg" alt="" />
-								</a>
+        li{
+            margin-bottom:10px;
+        }
 
-						</article>
+        .skills{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+            gap:15px;
+        }
 
-						<section class="posts">
+        .skill-box{
+            background:#f1f1f1;
+            padding:15px;
+            border-radius:12px;
+            text-align:center;
+            font-weight:bold;
+        }
 
-								<article>
-									<header>
-										<span class="date">Academic</span>
+        .footer{
+            text-align:center;
+            padding:30px;
+            color:#777;
+        }
 
-										<h2>
-											<a href="#">
-												Academic<br />
-												Achievement
-											</a>
-										</h2>
-									</header>
+    </style>
 
-									<a href="#" class="image fit">
-										<img src="images/pic02.jpg" alt="" />
-									</a>
+</head>
 
-									<p>
-									Memiliki IPK 3.86 selama perkuliahan di Telkom University
-									dan aktif mengikuti berbagai kegiatan akademik serta
-									pengembangan teknologi.
-									</p>
-								</article>
+<body>
 
-								<article>
-									<header>
-										<span class="date">Organization</span>
+    <div class="container">
 
-										<h2>
-											<a href="#">
-												Organization<br />
-												Experience
-											</a>
-										</h2>
-									</header>
+        <div class="hero">
 
-									<a href="#" class="image fit">
-										<img src="images/pic03.jpg" alt="" />
-									</a>
+            <img src="https://via.placeholder.com/160" alt="Profile">
 
-									<p>
-									Aktif sebagai anggota Dorm Team Telkom University dan
-									terlibat dalam kegiatan kepemimpinan, koordinasi mahasiswa,
-									dan pengembangan lingkungan asrama.
-									</p>
-								</article>
+            <h1>Zivani Cinta</h1>
 
-								<article>
-									<header>
-										<span class="date">Project</span>
+            <p>
+                Mahasiswa Telkom University yang memiliki minat dalam bidang
+                jaringan telekomunikasi, Internet of Things (IoT), networking,
+                Python programming, dan pengembangan teknologi digital.
+                Aktif dalam organisasi, project teknologi, serta content creation.
+            </p>
 
-										<h2>
-											<a href="#">
-												IoT & Technology<br />
-												Projects
-											</a>
-										</h2>
-									</header>
+        </div>
 
-									<a href="#" class="image fit">
-										<img src="images/pic04.jpg" alt="" />
-									</a>
+        <div class="section">
 
-									<p>
-									Mengembangkan project teknologi berbasis Internet of Things
-									(IoT), termasuk sistem dispenser otomatis multi-sensor untuk
-									kompetisi GEMASTIK.
-									</p>
-								</article>
+            <h2>About Me</h2>
 
-								<article>
-									<header>
-										<span class="date">Programming</span>
+            <div class="card">
+                <p>
+                    Saya merupakan mahasiswa Telkom University yang aktif dalam
+                    pengembangan kemampuan akademik dan teknologi. Memiliki
+                    ketertarikan pada bidang networking, API development,
+                    Internet of Things (IoT), machine learning, dan deep learning.
+                </p>
+            </div>
 
-										<h2>
-											<a href="#">
-												Python &<br />
-												Networking
-											</a>
-										</h2>
-									</header>
+        </div>
 
-									<a href="#" class="image fit">
-										<img src="images/pic05.jpg" alt="" />
-									</a>
+        <div class="section">
 
-									<p>
-									Memiliki kemampuan dasar dalam Python, HTML, API development
-									menggunakan Flask, networking, dan pengembangan sistem
-									teknologi digital.
-									</p>
-								</article>
+            <h2>Education</h2>
 
-								<article>
-									<header>
-										<span class="date">Deep Learning</span>
+            <div class="card">
+                <h3>Telkom University</h3>
+                <p>
+                    Mahasiswa bidang teknologi dan jaringan telekomunikasi
+                    dengan IPK 3.86.
+                </p>
+            </div>
 
-										<h2>
-											<a href="#">
-												YOLOv5<br />
-												Project
-											</a>
-										</h2>
-									</header>
+        </div>
 
-									<a href="#" class="image fit">
-										<img src="images/pic06.jpg" alt="" />
-									</a>
+        <div class="section">
 
-									<p>
-									Mengembangkan sistem deteksi otomatis jenis jamur menggunakan
-									metode deep learning YOLOv5 sebagai implementasi pengolahan
-									sinyal informasi.
-									</p>
-								</article>
+            <h2>Organization Experience</h2>
 
-								<article>
-									<header>
-										<span class="date">Digital Media</span>
+            <div class="card">
+                <h3>Dorm Team Telkom University</h3>
 
-										<h2>
-											<a href="#">
-												Content Creator<br />
-												Journey
-											</a>
-										</h2>
-									</header>
+                <p>
+                    Aktif dalam kegiatan organisasi, koordinasi mahasiswa,
+                    pengembangan lingkungan asrama, dan kepemimpinan mahasiswa.
+                </p>
+            </div>
 
-									<a href="#" class="image fit">
-										<img src="images/pic07.jpg" alt="" />
-									</a>
+        </div>
 
-									<p>
-									Memiliki ketertarikan dalam bidang content creation dan media
-									digital melalui platform TikTok dan YouTube.
-									</p>
-								</article>
+        <div class="section">
 
-						</section>
+            <h2>Projects</h2>
 
-				</div>
+            <div class="card">
+                <h3>Movie API Website</h3>
 
-				<footer id="footer">
+                <p>
+                    Membuat website pencarian database film menggunakan
+                    Python Flask API.
+                </p>
+            </div>
 
-						<section class="split contact">
+            <div class="card">
+                <h3>IoT Smart Dispenser - GEMASTIK</h3>
 
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Bandung, Indonesia</p>
-							</section>
+                <p>
+                    Mengembangkan dispenser otomatis berbasis multi-sensor
+                    untuk kompetisi GEMASTIK.
+                </p>
+            </div>
 
-							<section>
-								<h3>Education</h3>
-								<p>Telkom University</p>
-							</section>
+            <div class="card">
+                <h3>YOLOv5 Mushroom Detection</h3>
 
-							<section>
-								<h3>Email</h3>
-								<p>your-email@gmail.com</p>
-							</section>
+                <p>
+                    Mengembangkan sistem deteksi otomatis jenis jamur
+                    menggunakan metode deep learning YOLOv5.
+                </p>
+            </div>
 
-							<section>
-								<h3>Skills</h3>
-								<p>
-								Python<br />
-								HTML<br />
-								Networking<br />
-								IoT<br />
-								API Flask
-								</p>
-							</section>
+        </div>
 
-						</section>
+        <div class="section">
 
-				</footer>
+            <h2>Skills</h2>
 
-				<div id="copyright">
-						<ul>
-							<li>&copy; Zivani Cinta</li>
-							<li>Portfolio Website</li>
-						</ul>
-				</div>
+            <div class="skills">
 
-		</div>
+                <div class="skill-box">Python</div>
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+                <div class="skill-box">HTML</div>
 
-	</body>
+                <div class="skill-box">Flask API</div>
+
+                <div class="skill-box">Networking</div>
+
+                <div class="skill-box">IoT</div>
+
+                <div class="skill-box">Machine Learning</div>
+
+                <div class="skill-box">Deep Learning</div>
+
+                <div class="skill-box">Content Creation</div>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Achievements</h2>
+
+            <ul>
+                <li>IPK 3.86</li>
+                <li>Aktif dalam organisasi Dorm Team</li>
+                <li>Project IoT berbasis multi-sensor</li>
+                <li>Pengembangan API menggunakan Flask</li>
+                <li>Project Deep Learning YOLOv5</li>
+            </ul>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Contact</h2>
+
+            <p>Email : your-email@gmail.com</p>
+
+            <p>Location : Bandung, Indonesia</p>
+
+        </div>
+
+        <div class="footer">
+            © 2026 Zivani Cinta Portfolio
+        </div>
+
+    </div>
+
+</body>
 </html>
-```
